@@ -14,7 +14,7 @@ const Hero = ({ handleSignup, layloOpen, dates }) => {
     };
 
     return (
-        <div className="w-full h-screen overscroll-none relative">
+        <div className="w-full h-screen overscroll-none relative z-10">
             <Navbar />
             <AnimatePresence>
                 {tourWindow && (

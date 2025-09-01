@@ -36,13 +36,13 @@ export default function Home() {
     return (
         <div className="relative">
             <Loader isLoading={loading} />
-            {!loading && (
-                <Hero
-                    layloOpen={layloOpen}
-                    handleSignup={handleSignup}
-                    dates={dates}
-                />
-            )}
+
+            <Hero
+                layloOpen={layloOpen}
+                handleSignup={handleSignup}
+                dates={dates}
+            />
+
             <Signup layloOpen={layloOpen} handleSignup={handleSignup} />
         </div>
     );

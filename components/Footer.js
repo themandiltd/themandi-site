@@ -13,7 +13,7 @@ const Footer = ({ layloOpen, handleSignup }) => {
             className="absolute z-10  bottom-0 w-full flex flex-col justify-between w-full"
         >
             <Image
-                src="/logo.png"
+                src="/logo.webp"
                 className="w-fit ml-2 mb-2"
                 width={50}
                 height={50}

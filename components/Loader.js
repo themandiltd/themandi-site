@@ -9,14 +9,14 @@ const Loader = ({ isLoading }) => {
                 {isLoading && (
                     <motion.div
                         exit={{ opacity: 0 }}
-                        className="loader-container w-full h-screen bg-background flex items-center justify-center gap-4 flex-col"
+                        className="loader-container fixed inset-0 z-50 w-full h-screen bg-background flex items-center justify-center gap-4 flex-col"
                     >
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                         >
-                            <Image src="/logo.png" width={150} height={300} />
+                            <Image src="/logo.webp" width={150} height={300} />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0 }}
