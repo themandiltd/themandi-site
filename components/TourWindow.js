@@ -138,9 +138,8 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
                                             const soldOut = a["is-sold-out"];
 
                                             return (
-                                                <div>
+                                                <div key={evt.id}>
                                                     <a
-                                                        key={evt.id}
                                                         href={href}
                                                         className={`space-y-0 hover:underline cursor-pointer mb-4 hover:text-blue-700 ${
                                                             soldOut
