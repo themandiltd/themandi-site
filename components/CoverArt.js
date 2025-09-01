@@ -9,15 +9,10 @@ const CoverArt = (url, src, title) => {
                 target="__blank"
                 className="img-container relative w-sm md:w-lg cursor-pointer"
             >
-                <Image
-                    src="/cover.png"
-                    alt="cover art"
-                    width={600}
-                    height={600}
-                />
+                <Image src={src} alt="cover art" width={600} height={600} />
             </a>
             <div className="flex flex-row justify-between w-full">
-                <div className="text-xs">Song name</div>
+                <div className="text-xs">{title}</div>
                 <a
                     href={url}
                     target="__blank"

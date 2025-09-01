@@ -91,11 +91,11 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
                             lineHeight: 0.5,
                         }}
                     >
-                        <div className="text-[12px] md:text-[16px] leading-[1] text-black">
-                            {tourDates ? (
+                        <div className="text-[14px] md:text-[16px] leading-[1] text-black">
+                            {tourDates.length > 0 ? (
                                 <>
                                     <p className="mb-8">Tour Dates</p>
-                                    <div className="flex flex-col gap-8">
+                                    <div className="flex flex-col gap-8 pb-24">
                                         {tourDates.map((evt) => {
                                             const a = evt.attributes || {};
 
@@ -164,9 +164,15 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
                                     No shows currently scheduled;&nbsp;
                                     <span
                                         onClick={handleSignup}
-                                        className="text-[#0059FF] hover:underline"
+                                        className="text-[#0059FF] hover:underline cursor-pointer"
                                     >
-                                        click here to get notified
+                                        <span className="sm:inline hidden">
+                                            click
+                                        </span>
+                                        <span className="sm:hidden inline">
+                                            tap
+                                        </span>{" "}
+                                        here to get notified
                                     </span>
                                 </span>
                             )}

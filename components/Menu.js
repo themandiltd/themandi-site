@@ -21,7 +21,7 @@ const Menu = ({ clickFx }) => {
                         width={120}
                         height={100}
                         alt="music"
-                        className="shadow"
+                        className=""
                     />
                 </Link>
             </div>
@@ -32,7 +32,7 @@ const Menu = ({ clickFx }) => {
                         width={120}
                         height={100}
                         alt="shop; coming soon"
-                        className="shadow"
+                        className=""
                     />
                     <div className="text-xs text-white text-center mt-2">
                         coming soon
@@ -49,7 +49,7 @@ const Menu = ({ clickFx }) => {
                         width={160}
                         height={100}
                         alt="tour dates"
-                        className="shadow"
+                        className=""
                     />
                 </div>
             </div>

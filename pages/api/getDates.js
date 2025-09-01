@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     // Optional: allow ?artistId=... override. Fallback to your ID.
     const artistId =
         (req.query.artistId && String(req.query.artistId)) ||
-        "c7ddffab-826f-43f3-ad52-7055a3a36920";
+        "ace7e233-f5a0-4dff-a261-ceb018a953b7";
 
     // Leon bridges: c7ddffab-826f-43f3-ad52-7055a3a36920
 

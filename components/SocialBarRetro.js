@@ -19,7 +19,7 @@ const SocialBarRetro = ({ handleSignup, layloOpen }) => {
                     </div>
                     <div className="flex space-x-2 p-1 mr-2">
                         <a
-                            href="https://www.tiktok.com"
+                            href="https://www.tiktok.com/@themand_i"
                             className="icon-link"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -31,7 +31,7 @@ const SocialBarRetro = ({ handleSignup, layloOpen }) => {
                             />
                         </a>
                         <a
-                            href="https://www.youtube.com"
+                            href="https://www.youtube.com/channel/UC2aVFjnjPPxRauu1B4vGkgQ"
                             target="_blank"
                             className="icon-link"
                             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const SocialBarRetro = ({ handleSignup, layloOpen }) => {
                             <img src="/youtube.svg" alt="YouTube" />
                         </a>
                         <a
-                            href="https://www.instagram.com"
+                            href="https://www.instagram.com/themandi/?hl=en"
                             target="_blank"
                             className="icon-link text-white"
                             rel="noopener noreferrer"

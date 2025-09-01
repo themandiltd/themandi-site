@@ -18,7 +18,11 @@ const Hero = ({ handleSignup, layloOpen, dates }) => {
             <Navbar />
             <AnimatePresence>
                 {tourWindow && (
-                    <TourWindow clickFx={handleClick} dates={dates} />
+                    <TourWindow
+                        clickFx={handleClick}
+                        dates={dates}
+                        handleSignup={handleSignup}
+                    />
                 )}
             </AnimatePresence>
 
