@@ -53,7 +53,7 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
         >
             {/* TextEdit Window */}
             <div
-                className="mx-auto w-full max-w-[600px] rounded-md overflow-scroll bg-neutral-50"
+                className="mx-auto w-full max-w-[600px] rounded-md overflow-hidden bg-neutral-50"
                 style={{
                     boxShadow: "1px -1px 119px 0px rgba(0,0,0,0.75)",
                     filter: "blur(0.7px)",
@@ -75,7 +75,7 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
 
                 {/* Toolbar */}
                 <Image
-                    className="w-full border-b border-neutral-200 cursor-not-allowed"
+                    className="w-full border-b border-neutral-200 cursor-not-allowed pointer-events-none"
                     src="/text-header.png"
                     width={1000}
                     quality={100}

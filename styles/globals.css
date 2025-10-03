@@ -50,3 +50,11 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+
+@supports (-webkit-touch-callout: none) and (not (height: 100dvh)) {
+    @media (pointer: coarse) and (hover: none) {
+        .ios-full {
+            min-height: -webkit-fill-available;
+        }
+    }
+}

@@ -77,10 +77,7 @@ export default function MusicPage({}) {
     ];
 
     return (
-        <div
-            className="min-h-screen w-full overscroll-none overflow-hidden relative"
-            style={{ minHeight: "-webkit-fill-available" }}
-        >
+        <div className="md:min-h-screen min-h-dvh ios-full w-full overscroll-none overflow-hidden relative">
             <Navbar />
 
             {/* Back button */}
@@ -98,8 +95,7 @@ export default function MusicPage({}) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2 }}
-                className="w-full min-h-screen flex items-center justify-center"
-                style={{ minHeight: "-webkit-fill-available" }}
+                className="w-full md:min-h-screen min-h-dvh ios-full flex items-center justify-center"
             >
                 {/* Gallery */}
                 <div className="flex flex-row flex-nowrap w-full overflow-x-auto gap-6 px-6 py-4">

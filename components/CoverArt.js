@@ -17,7 +17,7 @@ const CoverArt = ({ url, src, title }) => {
                     className="aspect-1/1"
                 />
             </a>
-            <div className="flex flex-row justify-between w-full">
+            <div className="flex flex-row justify-between w-full blur-[.5px]">
                 <div className="text-xs">{title}</div>
                 <a
                     href={url}
