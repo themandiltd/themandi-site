@@ -14,7 +14,7 @@ const Hero = ({ handleSignup, layloOpen, dates }) => {
     };
 
     return (
-        <div className="w-full h-screen overscroll-none relative z-10">
+        <div className="w-full sm:min-h-screen min-h-[-webkit-fill-available] overscroll-none relative z-10">
             <Navbar />
             <AnimatePresence>
                 {tourWindow && (
@@ -36,7 +36,9 @@ const Hero = ({ handleSignup, layloOpen, dates }) => {
                         src="/them&i_trimmed_1.mov"
                         autoPlay
                         muted
+                        playsInline
                         loop
+                        controls={false}
                         className="h-full object-cover"
                     />
                 </div>
@@ -45,7 +47,9 @@ const Hero = ({ handleSignup, layloOpen, dates }) => {
                         src="/them&i_trimmed_2.mov"
                         autoPlay
                         muted
+                        playsInline
                         loop
+                        controls={false}
                         className="h-full object-cover"
                     />
                 </div>

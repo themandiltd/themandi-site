@@ -14,7 +14,7 @@ const Footer = ({ layloOpen, handleSignup }) => {
         >
             <Image
                 src="/logo.webp"
-                className="w-fit ml-2 mb-2"
+                className="w-fit ml-2 mb-2 hidden sm:block"
                 width={50}
                 height={50}
             />

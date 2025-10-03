@@ -9,7 +9,8 @@ const Menu = ({ clickFx }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="z-10 absolute w-full h-screen grid grid-rows-3"
+            className="z-10 absolute w-full min-h-screen grid grid-rows-3"
+            style={{ minHeight: "-webkit-fill-available" }}
         >
             <div className="row-container relative">
                 <Link

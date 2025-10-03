@@ -9,7 +9,8 @@ const Loader = ({ isLoading }) => {
                 {isLoading && (
                     <motion.div
                         exit={{ opacity: 0 }}
-                        className="loader-container fixed inset-0 z-50 w-full h-screen bg-background flex items-center justify-center gap-4 flex-col"
+                        style={{ minHeight: "-webkit-fill-available" }}
+                        className="loader-container fixed inset-0 z-50 w-full min-h-screen bg-background flex items-center justify-center gap-4 flex-col"
                     >
                         <motion.div
                             initial={{ opacity: 0 }}

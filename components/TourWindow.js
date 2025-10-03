@@ -83,9 +83,9 @@ export default function TourWindow({ clickFx, handleSignup, dates }) {
                 />
 
                 {/* Document page */}
-                <div className="bg-neutral-200/70 h-[600px] overflow-scroll">
+                <div className="bg-neutral-200/70 h-[400px] sm:h-[600px] overflow-scroll">
                     <div
-                        className="mx-auto min-h-[600px] bg-white shadow-md ring-1 ring-black/5 p-2"
+                        className="mx-auto  min-h-[600px] bg-white shadow-md ring-1 ring-black/5 p-2"
                         style={{
                             fontFamily: "Times New Roman, Times, serif",
                             lineHeight: 0.5,

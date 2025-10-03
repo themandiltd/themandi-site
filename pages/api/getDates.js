@@ -12,6 +12,7 @@ export default async function handler(req, res) {
         "ace7e233-f5a0-4dff-a261-ceb018a953b7";
 
     // Leon bridges: c7ddffab-826f-43f3-ad52-7055a3a36920
+    // themandi: ace7e233-f5a0-4dff-a261-ceb018a953b7
 
     const url = `https://cdn.seated.com/api/public/v1/artists/${artistId}/tour-events`;
 
