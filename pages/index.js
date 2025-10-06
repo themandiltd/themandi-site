@@ -26,11 +26,18 @@ export default function Home() {
 
         fetchDates();
 
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 3000); // Simulate a 3-second loading time
+        const isFirstVisit = localStorage.getItem("isFirstVisit");
 
-        return () => clearTimeout(timer);
+        if (!isFirstVisit) {
+            const timer = setTimeout(() => {
+                setLoading(false);
+                localStorage.setItem("isFirstVisit", "false");
+            }, 3000); // Simulate a 3-second loading time
+
+            return () => clearTimeout(timer);
+        } else {
+            setLoading(false);
+        }
     }, []);
 
     return (

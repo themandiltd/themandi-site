@@ -6,8 +6,16 @@ import Image from "next/image";
 import CoverArt from "@/components/CoverArt";
 import { motion } from "framer-motion";
 import { createClient } from "@supabase/supabase-js";
+import Signup from "@/components/Signup";
+import { useState } from "react";
 
 export default function MusicPage({}) {
+    const [layloOpen, setLayloOpen] = useState(false);
+
+    const handleSignup = () => {
+        setLayloOpen(!layloOpen);
+    };
+
     const music = [
         {
             title: "see me cry",
@@ -116,7 +124,8 @@ export default function MusicPage({}) {
                 </div>
             </motion.div>
 
-            <Footer />
+            <Footer handleSignup={handleSignup} layloOpen={layloOpen} />
+            <Signup layloOpen={layloOpen} handleSignup={handleSignup} />
         </div>
     );
 }
