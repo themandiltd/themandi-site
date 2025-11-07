@@ -27,7 +27,11 @@ const Menu = ({ clickFx }) => {
                 </Link>
             </div>
             <div className="row-container relative">
-                <div className="cursor-not-allowed hover:opacity-80 transition  absolute sm:left-5/8  left-4/8 top-1/3">
+                <a
+                    href="https://themandi.myshopify.com/"
+                    target="_blank"
+                    className="cursor-pointer hover:opacity-80 transition  absolute sm:left-5/8  left-4/8 top-1/3"
+                >
                     <Image
                         src="shop.svg"
                         width={120}
@@ -35,10 +39,7 @@ const Menu = ({ clickFx }) => {
                         alt="shop; coming soon"
                         className=""
                     />
-                    <div className="text-xs text-white text-center mt-2">
-                        coming soon
-                    </div>
-                </div>
+                </a>
             </div>
             <div className="row-container relative">
                 <div
